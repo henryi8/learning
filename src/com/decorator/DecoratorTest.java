@@ -1,4 +1,6 @@
-package com.decorator.animal;
+package com.decorator;
+
+import com.decorator.animal.*;
 
 /**
  * Created by Administrator on 2017/12/4.
