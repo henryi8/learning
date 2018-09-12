@@ -77,7 +77,7 @@ public class TestLambda {
     }
 
     /**
-     *
+     *  接口的写法
      */
     @Test
     public void test1(){
@@ -103,6 +103,7 @@ public class TestLambda {
         System.out.println(test);
 
     }
+
 
 
 }
