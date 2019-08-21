@@ -1,0 +1,19 @@
+package com.proxy.statiproxy;
+
+/**
+ * @author 赵星宇
+ * @date 2017/12/27
+ *
+ * 代理模式总结：
+ * 1：可以做到在不修改目标对象的功能前提下,对目标功能扩展.
+ * 2：因为代理对象需要与目标对象实现一样的接口,所以会有很多代理类,类太多.同时,一旦接口增加方法,目标对象与代理对象都要维护.
+ *
+ * 动态代理方式 用来解决静态代理方式遇到的问题。
+ */
+public class App {
+    public static void main(String[] args) {
+        UserDao userDao = new UserDao();
+        UserDaoProxy userDaoProxy = new UserDaoProxy(userDao);
+        userDaoProxy.save();
+    }
+}
