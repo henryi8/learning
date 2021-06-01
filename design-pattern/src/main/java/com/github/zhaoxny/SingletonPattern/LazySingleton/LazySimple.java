@@ -11,8 +11,12 @@ public class LazySimple {
 
     private LazySimple (){}
 
-    public static LazySimple getInstance(){
-        lazySimple = new LazySimple();
+
+    //jdk1.6后对synchronize性能优化了不少，不可避免的还是存在一定的性能问题
+    public synchronized static LazySimple getInstance(){
+        if(lazySimple == null) {
+            lazySimple = new LazySimple();
+        }
         return lazySimple;
     }
 
