@@ -25,6 +25,9 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>design-pattern</module>
+    </modules>
 
     <build>
     </build>
